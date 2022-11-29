@@ -1,0 +1,105 @@
+/* Combinators */
+
+/* descendent selector (space) */
+.style-div span {
+  color: yellow;
+}
+
+/* child selector */
+.style-div > h3 {
+  color: teal;
+}
+
+/* general siblings (~) */
+.style-div ~ h2 {
+  background-color: blue;
+}
+
+.style-div ~ ul li {
+  background-color: blue;
+}
+
+/* adjacent siblings(+) */
+.style-div + p {
+  background-color: blue;
+}
+
+ul > li {
+  color: pink;
+}
+
+/* pseudo class */
+/* syntax 
+selector:pseudo class {
+
+} */
+
+/* anchor */
+/* unvisited */
+a:link {
+  color: pink;
+}
+
+/* visited  */
+a:visited {
+  color: teal;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+a:active {
+  color: aqua;
+}
+
+p:first-child {
+  background-color: yellow;
+}
+
+p b:first-child {
+  color: aquamarine;
+}
+
+/* input:focus {
+
+} */
+
+/* pseudo elements */
+/* syntax 
+selector::pseudo elements {
+
+} */
+
+p::first-line {
+  color: palevioletred;
+}
+
+p::first-letter {
+  font-size: 30px;
+}
+
+h1::before {
+  content: url("facebook.png");
+}
+
+h1::after {
+  content: url("facebook.png");
+}
+
+::marker {
+  color: red;
+}
+
+/* placeholder, scrollbar pseudo elements */
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1;
+  width: 200px;
+  height: 200px;
+}
